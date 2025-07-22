@@ -35,6 +35,15 @@
     color:var(--primary);
     border-color:var(--primary);
 }
+.btn-secondary a {
+    color:var(--primary);
+    text-decoration: none;
+}
+
+.btn-secondary a:hover {
+    background:var(--primary);
+    color:var(--secondary);
+}
 .btn-secondary:hover{
     background:var(--primary);
     color:var(--secondary);
