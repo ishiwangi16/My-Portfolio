@@ -90,7 +90,7 @@ header nav .branding{
     margin-bottom:0.5rem;
 }
 .hero .right h1{
-    font-size:4rem;
+    font-size:4rem!important;
     font-weight:100;
     line-height:1.2;
     margin-bottom:2rem;
@@ -103,14 +103,15 @@ header nav .branding{
     margin-bottom:2rem;
 }
 .hero .right {
-    margin-top:-7rem;
+    margin-top:-6rem;
 }
+
 
 section{
     padding:6rem 0;
 }
 section.about .about-me-img{
-    height:450px;
+    width:400px;
 }
 section.about h1{
     margin-bottom: 1rem;
@@ -178,7 +179,8 @@ section.about .social a img{
    margin-bottom:8rem;
     text-align: center;
 }
-/* Projects */
+
+/* projects */
 section.projects{
     background:var(--light);
 }
@@ -228,7 +230,8 @@ section.projects .card-wrapper .card:hover h2, section.projects .card-wrapper .c
     color:var(--pure);
 }
 
-/* services */
+
+/* service */
 section.services{
     background:var(--light);
 }
@@ -285,102 +288,15 @@ section.freelancer{
     clip-path:polygon(0 0, 100% 0, 100% 100%, 67% 80%, 0 100%);
     padding-bottom:14rem;
 }
-
-/* Projects Section */
-.projects {
-  padding: 60px 20px;
-  background-color: #f9f9f9;
-  text-align: center;
+section.freelancer h1{
+    font-size:3rem;
+    margin-bottom:0.5rem;
 }
-
-.projects .section-heading {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-  color: #222;
+section.freelancer p{
+    font-size:1.3rem;
+    margin-bottom: 2rem;
+    font-family:'Lato', sans-serif;
 }
-
-.projects p {
-  color: #666;
-  font-size: 1rem;
-  margin-bottom: 40px;
-}
-
-.project-card {
-  background: #fff;
-  border-radius: 12px;
-  padding: 30px;
-  max-width: 800px;
-  margin: 0 auto 40px auto;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-  text-align: left;
-}
-
-.project-card h2 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  color: #1e1e1e;
-}
-
-.project-card p {
-  color: #444;
-  margin-bottom: 15px;
-  font-size: 1rem;
-}
-
-.project-card ul {
-  list-style: disc inside;
-  padding-left: 0;
-  margin-bottom: 20px;
-  color: #444;
-  line-height: 1.6;
-}
-
-.project-card a {
-  display: inline-block;
-  padding: 10px 18px;
-  margin-right: 10px;
-  margin-top: 10px;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: 500;
-  transition: all 0.3s ease;
-}
-
-.project-card .btn-primary {
-  background-color: #007bff;
-  color: white;
-  border: none;
-}
-
-.project-card .btn-primary:hover {
-  background-color: #0056b3;
-}
-
-.project-card .btn-secondary {
-  background-color: #f0f0f0;
-  color: #333;
-  border: 1px solid #ccc;
-}
-
-.project-card .btn-secondary:hover {
-  background-color: #e4e4e4;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .project-card {
-    padding: 20px;
-  }
-
-  .projects .section-heading {
-    font-size: 2rem;
-  }
-
-  .project-card h2 {
-    font-size: 1.3rem;
-  }
-}
-
 
 section.reviews .slider .slide img{
     width:100px;
@@ -696,7 +612,7 @@ footer .copyright{
         clip-path: polygon(0 0, 100% 0, 100% 100%, 27% 89%, 0 100%);
     }
     section.about .about-me-img{
-        height: 360px;
+        width: 260px;
     }
     section.services .card-wrapper{
         grid-template-columns: repeat(2, 1fr);
@@ -712,7 +628,7 @@ footer .copyright{
     }
 }
 
-@media (max-width:576px){
+@media (max-width:700px){
     .hero{
         flex-direction: column;
     }
@@ -720,14 +636,13 @@ footer .copyright{
         clip-path: polygon(0 0, 100% 0, 100% 100%, 69% 95%, 0 100%);
     }
     .hero .right{
-        position: absolute;
-        top:260px;
+       position: relative;
+        top: 62px;
         padding:0 1rem;
         background:linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.9));
     }
     .hero .left{
         margin-top:-5rem;
-        margin-right: -9rem;
         padding-bottom:4rem;
     }
     .about-inner-wrap{
@@ -771,10 +686,14 @@ footer .copyright{
     }
 }
 
-.project-screenshot {
-  max-width: 100%;
-  height: auto;
-  margin: 1rem 0;
-  border: 1px solid #ccc;
-  border-radius: 6px;
+@media (min-width:250px){ 
+  .hero .right h1{
+    font-size: 15px;
+  }
+  .hero .right p{
+   position: relative;
+        /* top: 10px; */
+        /* font-size: 12px; */
+        /* line-height: 1.9; */
+  }
 }
